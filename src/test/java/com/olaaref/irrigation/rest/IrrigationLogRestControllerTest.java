@@ -82,25 +82,8 @@ public class IrrigationLogRestControllerTest {
 		jdbc.execute(deleteCropSql);
 	}
 	
-	@Order(1)
-	@DisplayName("Create Irrigation Log")
-	@Test
-	public void createLogTest() throws Exception {
-		Plot plot = entityManager.find(Plot.class, 1);
-		IrrigationLog log = new IrrigationLog(plot, false, LocalDateTime.now());
-		log.setId(0);
-		
-		mockMvc
-			.perform(post("/logs/")
-					.contentType(MediaType.APPLICATION_JSON)
-					.content(objectMapper.writeValueAsString(log)))
-			.andExpect(status().isCreated())//status 201
-			.andDo(print());
-			
-
-	}
 	
-	@Order(2)
+	@Order(1)
 	@DisplayName("Get Irrigation Log By Plot")
 	@Test
 	public void getLogsByPlotTest() throws Exception {	
@@ -114,7 +97,7 @@ public class IrrigationLogRestControllerTest {
 	}
 	
 	
-	@Order(3)
+	@Order(2)
 	@DisplayName("Get All Irrigation Logs")
 	@Test
 	public void getAllLogsTest() throws Exception {
@@ -128,7 +111,7 @@ public class IrrigationLogRestControllerTest {
 
 	}
 	
-	@Order(4)
+	@Order(3)
 	@DisplayName("Get Log For Plot Does Not Exist")
 	@Test
 	public void getLogDoesNotExistTest() throws Exception {
