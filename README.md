@@ -10,6 +10,10 @@ Automatic irrigation system by Spring boot and Spring Rest
 -   Hibernate v5.6.3
 -   MySql
 
+## Another solution with Spring batch
+Another try to implement the irrigation system using Spring Batch available at <br/>
+<https://github.com/OlaAref/Irrigation-System-Batch>
+
 ## How to Run
 - Run sql scripts available at `sql` directory.
 - Download the zip or clone the Git repository.
