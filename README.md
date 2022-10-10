@@ -29,3 +29,12 @@ Automatic irrigation system by Spring boot and Spring Rest
 
 - All Endpoints are documented by Swagger and OpenApi at<br />
 `http://localhost:8085/IrrigationSystem/swagger-ui.html`
+
+## Unit Test Reports
+-   You can generate the unit test report by run this commands at the project directory<br/>
+`mvn clean test`<br/>
+`mvn site -DgenerateReport=false`
+
+- And unit test report will be available at<br/> `target/site/surefire-report.html`
+
+- Code Coverage Report available at <br/>`target/site/jococo/index.html`
