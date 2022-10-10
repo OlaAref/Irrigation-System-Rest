@@ -18,14 +18,14 @@ Automatic irrigation system by Spring boot and Spring Rest
 	`mvn spring-boot:run`
 	
 ## Important Rest Endpoints
-- Configure the plots and list all details
+- Configure the plots and list all details__
 `http://localhost:8085/IrrigationSystem/plots/`
 
-- List the agricultural crops and configure it.
+- List the agricultural crops and configure it.__
 `http://localhost:8085/IrrigationSystem/crops/`
 
-- Send a request to the sensor
+- Send a request to the sensor__
 `http://localhost:8085/IrrigationSystem/sensor/call/{id}`
 
-- All Endpoints are documented by Swagger and OpenApi at 
+- All Endpoints are documented by Swagger and OpenApi at __
 `http://localhost:8085/IrrigationSystem/swagger-ui.html`
